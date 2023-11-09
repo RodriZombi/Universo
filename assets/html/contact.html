@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" href="../img/icono.png">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>Contact</title>
+</head>
+
+<body>
+
+  <header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg pt-4 " style="font-family: 'Roboto Mono', monospace; font-size: 1rem;">
+      <div class="container">
+        <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
+        <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-black border-end border-dark active" aria-current="page"
+                href="../../index.html">01: Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black border-end border-dark" href="about.html">02: About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black border-end border-dark" href="contact.html">03: Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-black " href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                04: APIS
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item text-black " href="apod.html">04.1: Foto del dia</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-black " href="mars.html">04.2: Robots en Marte</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-black " href="geo.html">04.3: GeoSatelital ArcGIS</a>
+                </li>
+              </ul>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="vg-page page-contact" id="contact">
+    <div class="container-fluid">
+      <div class="col-12 pt-5 mx-auto">
+        <h3 id="labelti" class="text-center fw-bold h3 fs-2 mx-2"> <span class="fs-4 fw-light">|</span> 03 : Formulario
+          de Contacto <span class="fs-4 fw-light">|</span></h3>
+      </div>
+      <form class="form-horizontal" id="formJQ">
+        <div class="form-group">
+          <label for="nombre" class="col-sm-2 control-label">Nombre:</label>
+          <div class="col-sm-2">
+            <input type="text" id="nombre" name="nombre" class="form-control">
+          </div>
+          <label for="apellido" class="col-sm-1 control-label">Apellido:</label>
+          <div class="col-sm-2">
+            <input type="text" id="apellido" name="apellido" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group mx-auto">
+          <div class="col-sm-offset-2 col-sm-2">
+            <span class=""><strong>Sexo:</strong></span><br>
+            <div class="radio">
+              <label><input type="radio" name="count" value="Masculino">Masculino</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="count" value="Femenino">Femenino</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="count" value="Indefinido">Indefinido</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="comments" class="col-sm-1 control-label">Comentarios:</label>
+            <div class="col-sm-6">
+              <textarea name="comments" id="comments" cols="40" rows="5" class="form-control mx-2"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="edad" class="col-sm-2 control-label">Edad:</label>
+          <div class="col-sm-4">
+            <input type="number" id="edad" name="edad" class="form-control col-6">
+          </div>
+          <label for="tel" class="col-sm-1 control-label">Telefono:</label>
+          <div class="col-sm-4">
+            <input type="text" id="tel" name="tel" class="form-control col-6">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-4">
+            <span class=""><strong>Intereses:</strong></span><br>
+            <div class="checkbox ">
+              <label><input type="checkbox" value="Entretenimiento">Entretenimiento</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="Tecnología">Tecnología</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="Musica">Musica</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="Videojuegos">Videojuegos</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="Programacion">Programacion</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="Finanzas">Finanzas</label>
+            </div>
+          </div>
+          <div class="col-sm-offset-1 col-sm-4">
+            <label for="depa" class="">Departamento</label>
+            <select name="depa" id="depa" class="form-control">
+              <option value="">--Seleccionar--</option>
+              <option value="Ahuachapan">Ahuachapan</option>
+              <option value="Sonsonate">Sonsonate</option>
+              <option value="Santa Ana">Santa Ana</option>
+              <option value="Chalatenango">Chalatenango</option>
+              <option value="San Salvador">San Salvador</option>
+              <option value="La Libertad">La Libertad</option>
+              <option value="Cuscatlán">Cuscatlán</option>
+              <option value="La Paz">La Paz</option>
+              <option value="San Vicente">San Vicente</option>
+              <option value="Cabañas">Cabañas</option>
+              <option value="San Miguel">San Miguel</option>
+              <option value="Usulután">Usulután</option>
+              <option value="Morazán">Morazán</option>
+              <option value="La Unión">La Unión</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="correo" class="col-sm-2 control-label ">Correo:</label>
+          <div class="col-sm-8">
+            <input type="text" id="correo" name="correo" class="form-control ">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="user" class="col-sm-2 control-label">Usuario</label>
+          <div class="col-sm-4">
+            <input type="text" id="user" name="user" class="form-control">
+          </div>
+          <label for="password" class="col-sm-1 control-label">Contraseña</label>
+          <div class="col-sm-4">
+            <input type="password" id="password" name="password" class="form-control ">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-8">
+            <div class="checkbox">
+              <label class=""> <input type="checkbox" id="agree" name="agree" value="agree">Estoy de
+                acuerdo con los Terminos y Condiciones.</label>
+            </div>
+            <em id="agree-error" class="help-block"></em>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-8">
+            <button type="submit" class="submit mt-3 btn btn-dark" onclick="ValEnvio()" onfocus="ValidityState()"
+              id="botonX">Enviar</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+    <!-- API Google Maps -->
+    <div class="vg-page page-contact" id="api">
+      <div class="container-fluid">
+        <h3 id="labelti" class="text-center fw-bold h3 fs-2 mx-2"> <span class="fs-4 fw-light">|</span> 03 : API Google Maps
+           <span class="fs-4 fw-light">|</span></h3>
+        <div class="container">
+          <div class="ml-auto ">
+            <div class="vg-maps">
+              <div id="google-maps" style="width: 100%; height: 100%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+
+  <footer class="footer-container text-center bg-black py-2 text-secondary pt-4">
+    <div class="container pt-2">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>© Copyright 2022 | Website creada por: <br>Jonathan Alberto Larios Valdez(049120)<br> Rodrigo Jose Portillo Bonilla(023520) <br> Jose Daniel Osorio Elias(212318) <br> Ever Alexander Garcia Vasquez(079719)</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <!-- Javas necesarios para api de maps -->
+  <script src="../js/google-maps.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+  <!-- partial -->
+  <script src="../js/contact.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script>
+    function ValEnvio() {
+      //Seleccion de objetos a nivel consola
+      var entradas = document.getElementsByTagName("input")
+      var chec = document.getElementsByClassName("checkbox")
+      var combos = document.getElementsByTagName("select")
+      var radios = document.getElementsByClassName("radio")
+      var comentario = document.getElementsByTagName("textarea")
+
+      function validaVacio(valor) {
+        valor = valor.replace("&nbsp;", "");
+        valor = valor == undefined ? "" : valor;
+        if (!valor || 0 === valor.trim().length) {
+          return true;
+        }
+        else {
+          return false;
+        }
+      }
+
+      if (validaVacio(entradas[0].value) || validaVacio(entradas[1].value) || validaVacio(entradas[5].value) || validaVacio(entradas[6].value) || validaVacio(entradas[13].value) || validaVacio(entradas[14].value) || validaVacio(entradas[15].value)
+        || validaVacio(combos[0].value) || validaVacio(comentario[0].value)) {  //COMPRUEBA CAMPOS VACIOS
+        alert("¡Campos vacios! Por favor llenarlos para contactar...")
+        location.load()
+
+      } else {
+        alert('¡Felicidades! Envio exitoso... \n\n         Información: \n- Nombre: ' +
+          entradas[0].value + ' ' + entradas[1].value + '\n- Usuario: ' + entradas[14].value + '\n- Correo: ' + entradas[13].value +
+          '\n- Edad: ' + entradas[5].value + '\n- Telefono: ' + entradas[6].value +
+          '\n- Departamento: ' + combos[0].value +
+          '\n- Comentario: ' + comentario[0].value)
+      }
+      location.reload()
+    }
+  </script>
+</body>
+
+</html>

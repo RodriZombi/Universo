@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="icon" href="../img/icono.png">
+    <title>Imagen Del Dia NASA</title>
+</head>
+
+<body>
+    <div id="site-border-left"></div>
+    <div id="site-border-right"></div>
+    <div id="site-border-top"></div>
+    <div id="site-border-bottom"></div>
+
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg pt-4 " style="font-family: 'Roboto Mono', monospace; font-size: 1rem;">
+            <div class="container">
+                <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-black border-end border-dark active" aria-current="page" href="../../index.html"  >01: Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black border-end border-dark" href="about.html" >02: About</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link text-black border-end border-dark" href="contact.html" >03: Contact</a>
+                    </li>-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                            03: APIS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item text-black " href="apod.html">03.1: Foto del dia</a>
+                            </li> 
+                            <li>
+                                <a class="dropdown-item text-black " href="mars.html">03.2: Robots en Marte</a>
+                            </li> 
+                            <li>
+                                <a class="dropdown-item text-black " href="geo.html">03.3: GeoSatelital ArcGIS</a>
+                            </li> 
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container bg-white">
+        <div class="row g-0">
+            <div class="col-12 pt-5 mx-auto">
+                <h3 id="labelti" class="text-center fw-bold h3 fs-2 mx-2"> <span class="fs-4 fw-light">|</span> 03.1 : Foto del dia <span class="fs-4 fw-light">|</span></h3>
+            </div>
+
+            <div class="col-12 pt-4 d-flex justify-content-center gap-2">
+                <label for="input" class="pt-1">Seleccione fecha:</label>
+                <input type="date" id="fechaSelect" name="fechaSelect" placeholder="(AAAA-MM-DD)" pattern="\d{4}-\d{2}-\d{2}" class="">
+                <button type="button" class="btn btn-outline-dark" id="btnVer" name="btnVer" onclick="obtenerDatos()">Ver</button>
+            </div>
+
+            <div class="col-12 ">
+                <h3 id="titulo" class="pt-4 text-center"></h3>
+                <p id="fecha" class="text-center"></p>
+                <p id="descripcion" class="lead mx-4 mb-3"></p>
+
+                
+            </div>
+
+            <div id="c_multimedia" class="col-12 col-lg-6 mx-auto d-flex justify-content-center py-4">
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-container text-center bg-black py-2 text-secondary ">
+        <div class="container pt-2">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>© Copyright 2023 | Website creada por: <br> Rodrigo Jose Portillo Bonilla(023520) 
+                        <br> Griselda Marilin Rodriguez Alvarado(015120)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../js/apod.js"></script>
+</body>
+
+</html>
